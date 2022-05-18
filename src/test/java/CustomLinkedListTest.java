@@ -7,11 +7,11 @@ import java.util.LinkedList;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CustomLinkedListTest {
-    private LinkedList<String> list;
+    private CustomLinkedList<String> list;
 
     @BeforeEach
     public void setup() {
-        list = new LinkedList<>();
+        list = new CustomLinkedList<>();
         list.add("0");
         list.add("1");
         list.add("2");

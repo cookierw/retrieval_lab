@@ -37,7 +37,15 @@ public class CustomLinkedList<T> {
      * @param index
      */
     public T get(int index){
-        // TODO: Complete me
+        if(index < 0 || index >= size) throw new IndexOutOfBoundsException();
+
+        Node<T> current = first;
+
+        for(int i = 0; i < index; i++){
+            current = current.next;
+        }
+
+        return current.item;
     }
 
     public boolean isEmpty(){
